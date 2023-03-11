@@ -1,0 +1,115 @@
+
+Перейти в папку для работы.
+
+     cd /c/"Новая папка"/33qa
+     ls -la
+     cd Linux
+   
+Посмотреть где я.
+   
+    pwd
+
+Создать папку.
+   
+    mkdir dir1
+
+Зайти в папку.
+
+    cd dir1
+    
+Создать 3 папки.
+   
+    mkdir dir1 dir2 dir3
+   
+Зайти в любоую папку.
+  
+    cd dir1
+    
+Создать 5 файлов (3 txt, 2 json).
+   
+    touch {Text1,Text2,Text3}.txt {json1,json2}.json
+  
+Создать 3 папки.
+    
+    mkdir dir_1 dir_2 dir_3
+  
+Вывести список содержимого папки.
+  
+    ls -la
+
+Открыть любой txt файл + написать туда любой текст.
+ 
+    cat > text1.txt
+     "Мастер и Маргарита
+      Собачье сердце
+      Белая гвардия
+      Записки юного врача
+      Роковые яйцы
+      Морфий"
+    ctrl+C
+    
+Выйти из папки на уровень выше.
+    
+    cd ..
+
+Переместить любые 2 файла,в любую другую папку. 
+ 
+    mv dir1/{Text2.txt,json1.json} dir2/
+  
+Скопировать любые 2 файла,в любую другую папку.
+ 
+    cp dir1/{Text1.txt,json2.json} dir3/
+ 
+Найти файл по имени в папке,зайти в эту папку.
+ 
+    find dir1/ -name Text1.txt
+    cd dir1
+
+Посмотреть содержимое в реальном времени.
+   
+    less +f Text1.txt
+  
+Вывести несколько первых строк из текстового файла.
+  
+    head -4 Text1.txt
+  
+Вывести несколько последних строк из текстового файла.
+ 
+    tail -3 Text1.txt
+
+Просмотреть содержимое длинного файла.
+   
+    less Text1.txt
+ 
+Вывести дату и время.
+    
+    date
+ 
+Отправить http запрос на сервер.
+  
+    curl http://162.55.220.**:****/terminal-hw-request
+
+Написать скрипт.
+ 
+    nano script1.sh 
+      {
+        #!/bin/bash
+        mkdir testscript
+        cd testscript
+        mkdir test1 test2 test3
+        cd test1
+        touch {zzz,xxx,ccc}.txt {qqq,www}.json www.png
+        mkdir test1_1 test1_2 test1_3
+        ls -la
+        mv {zzz.txt,www.png} test1_1/
+     }
+
+Посмотреть, что скрип создался ,запустить его.
+    
+    ls
+    bash script1.sh
+  
+Записать шаги в текстовый файл.
+ 
+    history >> linux.txt
+    
