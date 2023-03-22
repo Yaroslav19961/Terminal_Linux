@@ -1,0 +1,38 @@
+pwd
+cd
+mkdir
+ls
+cp
+mv
+rm
+touch
+cat
+vim
+find
+grep
+less
+head
+tail
+date
+curl
+nano ***.sh
+	#1/bin/bash
+bash 
+history
+explorer .
+echo
+
+git clone
+git status
+git add .
+git commit -m
+git push
+git commit -am
+git pull
+git branch
+git branch ***
+git checkout
+git merge
+git push -u origin
+git fetch
+git push origin --delete ***
